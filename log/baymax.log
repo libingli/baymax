@@ -1,0 +1,16 @@
+20180107 21:27:59 [INFO] baymax.py:29 Hello. I am Baymax, your personal companion.
+20180107 21:28:06 [INFO] stt.py:108 Hi. I am Baymax, may I help you
+20180107 21:28:10 [INFO] stt.py:203 阿里云语音识别到了: 音乐
+20180107 21:28:10 [INFO] music.py:136 Starting music mode
+20180107 21:28:10 [INFO] music.py:35 正在为您登录网易云音乐
+20180107 21:28:10 [INFO] music.py:41 登录成功
+20180107 21:28:12 [INFO] player.py:120 now playing 金玟岐's 岁月神偷
+20180107 21:28:19 [INFO] stt.py:108 Hi. I am Baymax, may I help you
+20180107 21:28:26 [INFO] stt.py:203 阿里云语音识别到了: 随机
+20180107 21:28:26 [INFO] player.py:120 now playing 陈慧娴's 夜机
+20180107 21:28:45 [INFO] stt.py:108 Hi. I am Baymax, may I help you
+20180107 21:28:48 [INFO] stt.py:203 阿里云语音识别到了: 这是什么歌？
+20180107 21:28:48 [INFO] mic.py:220 正在播放的是陈慧娴的夜机
+20180107 21:29:07 [INFO] stt.py:108 Hi. I am Baymax, may I help you
+20180107 21:29:10 [INFO] stt.py:203 阿里云语音识别到了: 退出
+20180107 21:29:10 [INFO] brain.py:80 Handling of phrase '音乐' by skill 'music' completed

@@ -1,0 +1,14 @@
+# 阿里云
+Alibaba:
+    ak_id: ''
+    ak_secret: ''
+
+# 网易云音乐
+Netease:
+    username: ''
+    password: ''
+
+#图灵机器人
+Turing:
+    openapi: 'http://www.tuling123.com/openapi/api'
+    apikey: ''
