@@ -4,9 +4,9 @@ import logging
 import os
 import signal
 
-from utils import const 
-from utils.brain import Brain 
-from utils.mic import Mic 
+from core import const 
+from core.brain import Brain 
+from core.mic import Mic 
 
 class Baymax(object):
 

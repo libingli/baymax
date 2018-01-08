@@ -13,7 +13,7 @@ import random
 sys.path.append("..")
 from musicbox.api import NetEase
 from musicbox.player import Player
-from utils import const
+from core import const
 
 reload(sys)
 sys.setdefaultencoding('utf8')

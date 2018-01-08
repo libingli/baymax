@@ -13,7 +13,7 @@ import os
 import sys
 
 sys.path.append("..")
-from utils import const
+from core import const
 from .singleton import Singleton
 from .utils import utf8_data_to_file
 

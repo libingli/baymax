@@ -5,8 +5,8 @@ import requests
 import sys
 
 sys.path.append("..")
-from utils import const
-from utils.mic import Mic 
+from core import const
+from core.mic import Mic 
 from uuid import getnode 
 
 reload(sys)
