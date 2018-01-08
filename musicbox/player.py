@@ -117,7 +117,7 @@ class Player(object):
                     popenArgs['mp3_url'] = new_url
 
                     try:
-                        log.info("now playing "+ self.playing_artist + "'s "+ self.playing_name)
+                        log.info("now playing "+self.playing_artist+"'s <"+self.playing_name+">")
                         log.debug("now playing with new url:" + new_url)
                         self.popen_handler.stdin.write(b'\nL ' + new_url.encode('utf-8') + b'\n')
                         self.popen_handler.stdin.flush()

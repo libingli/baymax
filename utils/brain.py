@@ -73,7 +73,7 @@ class Brain(object):
                     self.logger.error("Handling of phrase '%s' by " +
                         "skill '%s' error: %s", text, skill.__name__, e)
                     reply = "抱歉，我的大脑出故障了，晚点再试试吧"
-                    self.mic.say(reply)
+                    self.mic.say(reply, "brain_error.mp3")
                 else:
                     self.logger.info("Handling of phrase '%s' by " +
                                        "skill '%s' completed", text,

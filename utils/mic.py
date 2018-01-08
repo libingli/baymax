@@ -216,14 +216,16 @@ class Mic:
         stream_out.close()
         audio.terminate()
 
-    def say(self, text, file_name=os.path.join(const.resources_path, "chat.mp3")):
-    	self.logger.info(text)
-        mp3 = tts.send_request(text)
-        fd = open(file_name, "w+")
-        fd.write(mp3)
-        fd.close()
+    def say(self, text, cache_file="mic.mp3"):
+        cache_file = os.path.join(const.resources_path, cache_file)
+        if os.path.exists(cache_file) == False:
+            mp3 = tts.send_request(text)
+            fd = open(cache_file, "w+")
+            fd.write(mp3)
+            fd.close()
         volume = 1.0 
-        self.play(file_name, volume)
+    	self.logger.info(text)
+        self.play(cache_file, volume)
 
 # pick a MP3 music file you have in the working folder
 # otherwise give the full file path
@@ -232,5 +234,5 @@ if __name__ == "__main__":
     # optional volume 0 to 1.0
     volume = 1.0 
     mic = Mic()
+    mic.say("你好，我是大白，我是你的私人家庭顾问.", "welcome.mp3")
     mic.play(audio_file, volume)
-    mic.say("稍等，正在为您登录网易云音乐")

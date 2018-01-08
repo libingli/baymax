@@ -1,0 +1,6 @@
+*.pyc
+log/
+log/baymax.log
+config/baymax.yaml
+resources/chat.mp3
+resources/mic.mp3

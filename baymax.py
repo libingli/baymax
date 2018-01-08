@@ -14,7 +14,7 @@ class Baymax(object):
         self.mic = Mic()
         self.brain = Brain(self.mic)
         self.interrupted = False
-       	logging.basicConfig(level=logging.INFO,
+       	logging.basicConfig(level=logging.DEBUG,
                 format='%(asctime)s [%(levelname)s] %(filename)s:%(lineno)d %(message)s',
                 datefmt='%Y%m%d %H:%M:%S',
                 filename=const.log_file,
@@ -30,7 +30,7 @@ class Baymax(object):
         self.mic.play(os.path.join(const.resources_path, "welcome.mp3"))
         while True:
             if self.interrupted:
-                logging.debug("●—● Balalalala")
+                logging.info("Balalalala")
                 break
 	    detect = self.mic.detecting()
 	    if detect == None:
